@@ -1,0 +1,99 @@
+/* Resetting default margins and paddings */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #000000c4;
+  }
+  
+/* Styling of divs */
+
+/* ---------------- Top elements ----------------------- */
+.topEle{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 6px;
+  padding-top: 10px;
+}
+.topEle span{
+  margin: 5px;
+  padding-right: 4px;
+}
+.topEle a{
+  color: white;
+  text-decoration: none;
+}
+
+a img{
+  border-radius: 50%;
+  margin:0 5px;
+}
+/* ---------------- Top elements over ----------------------- */
+ 
+/* -------------------- Google Logo ------------------------- */
+.logo{
+  padding-top: 6px;
+  text-align: center;
+}
+.logo img{
+  height: 100px;
+}
+
+/* -------------------- Google Logo over ------------------------- */
+
+
+/* -------------------- Search Bar ------------------------- */
+.search-bar {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 20px;
+    }
+  
+  input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 500px;
+    height: 20px; 
+    outline: none; /*Remove default outline*/
+  }
+/* -------------------- Search Bar over ------------------------- */
+  
+
+/* -------------------- Search Buttons ------------------------- */
+
+  .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .buttons button {
+    margin: 5px;
+    padding: 10px;
+  
+    border: none;
+    background-color: #4285f4; /*Google Blue*/
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-out;
+  }
+  
+  button:hover {
+    background-color: #5fd13c; /* Darker shade of Google Blue on hover */
+  }
+  
+  .linkStyle{
+    text-decoration: none;
+    color: white;
+  }
+
+/* -------------------- Search Buttons over ------------------------- */
