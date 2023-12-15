@@ -8,7 +8,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #000000c4;
+    background-color: #202124;
   }
   
 /* Styling of divs */
@@ -20,6 +20,7 @@
   justify-content: flex-end;
   padding: 6px;
   padding-top: 10px;
+  font-size: smaller;
 }
 .topEle span{
   margin: 5px;
@@ -33,6 +34,10 @@
 a img{
   border-radius: 50%;
   margin:0 5px;
+}
+
+span a:hover{
+  text-decoration: underline;
 }
 /* ---------------- Top elements over ----------------------- */
  
@@ -58,10 +63,14 @@ a img{
   
   input{
     padding: 10px;
+    padding-left: 20px;
     border: 1px solid #ccc;
+    background-color: #202124;
+    color: white;
     border-radius: 20px;
-    width: 500px;
-    height: 20px; 
+    width: 50vw;
+    height: 25px; 
+    font-size: 15px;
     outline: none; /*Remove default outline*/
   }
 /* -------------------- Search Bar over ------------------------- */
@@ -70,6 +79,7 @@ a img{
 /* -------------------- Search Buttons ------------------------- */
 
   .buttons{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -77,18 +87,18 @@ a img{
 
   .buttons button {
     margin: 5px;
-    padding: 10px;
+    padding: 10px 20px;
   
     border: none;
-    background-color: #4285f4; /*Google Blue*/
+    background-color: #4f5157; /*Google Blue*/
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-out;
   }
   
   button:hover {
-    background-color: #5fd13c; /* Darker shade of Google Blue on hover */
+    background-color: black; /* Darker shade of Google Blue on hover */
   }
   
   .linkStyle{
@@ -96,4 +106,85 @@ a img{
     color: white;
   }
 
+  .buttons button:hover{
+    outline: solid rgb(200, 198, 198);
+  }
 /* -------------------- Search Buttons over ------------------------- */
+
+/* --------------------------- Languages ---------------------- */
+.langs{
+  text-align: center;
+  color: rgb(159, 156, 156);
+  margin-top: 18px;
+  font-size: small;
+  height: 200px;
+}
+.langs span{
+  padding: 0 5px;
+}
+.langs a{
+  color: rgb(112, 167, 215);
+  text-decoration: none;
+}
+/* --------------------------- Languages over ---------------------- */
+
+/* --------------------------- Footer 1 ---------------------- */
+
+.footer1 , .footer2{
+  background-color: rgb(27, 26, 26);
+  color: rgb(241, 238, 238);
+  padding: 15px 30px;
+}
+
+.footers{
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.footer1{
+  border-bottom: solid 1px rgb(135, 135, 135);
+}
+.footer2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+.footer2 a{
+  color: rgb(241, 238, 238);
+  text-decoration: none;
+}
+.footer2 a:hover{
+ text-decoration: underline;
+}
+
+.lFooter a{
+  padding: 0 15px;  
+  font-size: small;
+}
+/* --------------------------- Footer 1 complete ---------------------- */
+/* @media screen and (max-width: 768px){ */
+@media (max-width: 768px){
+  input{
+    width: 70vw;
+  }
+  .langs{
+    height: 160px;
+  }
+  .footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bFooter{
+    padding-top: 5px;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .langs p{
+    display: flex;
+    flex-direction: column;
+  }
+}
